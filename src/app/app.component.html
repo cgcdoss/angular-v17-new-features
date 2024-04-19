@@ -1,3 +1,9 @@
-<main class="px-4 container mx-auto mt-8">
+<header class="fixed top-0 left-0 w-full p-4 bg-gray-700 space-x-2">
+    <a routerLink="cart" class="text-white hover:bg-gray-900 px-4 py-2 transition-all">Carrinho de compras</a>
+    <a routerLink="todo" class="text-white hover:bg-gray-900 px-4 py-2 transition-all">Todo list</a>
+</header>
+<div class="mt-16"></div>
+
+<main class="px-4 container mx-auto">
     <router-outlet />
 </main>
