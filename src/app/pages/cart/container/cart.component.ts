@@ -24,7 +24,7 @@ export class CartComponent {
   public search = new FormControl('', { nonNullable: true });
 
   public onItemSelected(item: string): void {
-    this._snackBar.open(item);
+    this._snackBar.open(item, undefined, { duration: 5000 });
   }
 
 }
