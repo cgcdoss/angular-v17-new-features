@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal, viewChildren } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -12,5 +12,16 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+
+  routes = [
+    { path: 'cart', name: 'Carrinho de compras' },
+    { path: 'todo', name: 'Todo list' },
+    { path: 'defer', name: 'Defer' },
+  ];
+  expanded = signal(false);
+
+  constructor() {
+    viewChildren('')
+  }
 
 }
