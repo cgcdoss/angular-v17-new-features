@@ -1,0 +1,9 @@
+<div class="flex flex-col gap-1">
+    <ul #ulElem>
+        @for (item of filteredItems(); track $index) {
+        <li class="cursor-pointer hover:bg-gray-100 p-2" (click)="itemSelected.emit(item.name)">{{ item.name }}</li>
+        } @empty {
+        <li>Nenhum item encontrado</li>
+        }
+    </ul>
+</div>

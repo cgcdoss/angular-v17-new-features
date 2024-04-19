@@ -1,0 +1,8 @@
+<h1>Carrinho de compras:</h1>
+
+<mat-form-field class="example-full-width">
+    <mat-label>Pesquisar</mat-label>
+    <input matInput placeholder="Ex. Pizza" [formControl]="search">
+</mat-form-field>
+
+<app-list [search]="search.value" (itemSelected)="onItemSelected($event)" />
