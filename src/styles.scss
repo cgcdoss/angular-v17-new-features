@@ -57,7 +57,7 @@ app-root > main {
 
 ::view-transition-old(principal),
 ::view-transition-new(principal) {
-    animation-duration: 200ms;
+    animation-duration: 350ms;
     animation-name: -ua-view-transition-fade-in, transition-in;
 }
 
