@@ -1,10 +1,16 @@
 <header class="fixed top-0 left-0 w-full z-20 p-4 bg-gray-700">
-    <button class="md:hidden text-white hover:bg-gray-900 px-4 py-2 transition-all"
-        (click)="expanded.set(!expanded())">Expandir</button>
+    <div class="md:hidden flex items-center gap-2">
+        <button class="text-white hover:bg-gray-900 px-4 py-2 transition-all" (click)="expanded.set(!expanded())">
+            <img [ngSrc]="'assets/hamburger.svg'" alt="hamburger" width="24" height="24">
+        </button>
+        <p class="text-white">
+            Angular v17 new features ✨
+        </p>
+    </div>
     <div class="container mx-auto hidden md:flex gap-2" [class.expanded]="expanded()">
         @for (route of routes; track $index) {
         <a [routerLink]="route.path" class="text-white hover:bg-gray-900 px-4 py-2 transition-all"
-            (click)="expanded.set(false)">
+            [class.bg-gray-400]="router.url === route.path" (click)="expanded.set(false)">
             {{route.name}}
         </a>
         }
