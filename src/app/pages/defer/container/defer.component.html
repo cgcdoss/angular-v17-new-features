@@ -1,4 +1,4 @@
-<h1>
+<h1 class="text-2xl mb-4">
     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt sed asperiores nostrum natus, aperiam aliquid
     inventore quisquam tempore blanditiis obcaecati voluptate dolore unde, enim repudiandae facere! Provident quia
     aliquam maiores.
@@ -74,11 +74,45 @@
     possimus?
 </h1>
 
+<h1 class="text-2xl my-4">Com on interaction (basta clicar)</h1>
+
+@defer (on interaction) {
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc10uXFleZuTdeL4R0JYdMlHPpR0EiE1f6etcMoUr7tA&s"
+    alt="Logo do Angular" width="100px" height="100px"><br>
+} @placeholder {
+<h2 class="text-xl">Futura imagem</h2>
+} @loading (minimum 2s) {
+<h2 class="text-xl">Carregando imagem...</h2>
+} @error {
+<h2 class="text-xl">Erro ao obter imagem</h2>
+}
+
+<hr>
+
+<h1 class="text-2xl my-4">Com on hover</h1>
+
+@defer (on hover) {
+<img src="https://seeklogo.com/images/A/angular-icon-logo-5FC0C40EAC-seeklogo.com.png" alt="Logo do Angular"
+    width="100px" height="100px"><br>
+} @placeholder {
+<h2 class="text-xl">Futura imagem</h2>
+} @loading (minimum 2s) {
+<h2 class="text-xl">Carregando imagem...</h2>
+} @error {
+<h2 class="text-xl">Erro ao obter imagem</h2>
+}
+
+<hr>
+
+<h1 class="text-2xl my-4">Com on viewport</h1>
+
 @defer (on viewport) {
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"
     alt="Logo do Angular" width="100px" height="100px"><br>
 } @placeholder {
-<p>Futura imagem</p>
+<h2 class="text-xl">Futura imagem</h2>
 } @loading (minimum 2s) {
-<h2>Carregando imagem...</h2>
+<h2 class="text-xl">Carregando imagem...</h2>
+} @error {
+<h2 class="text-xl">Erro ao obter imagem</h2>
 }
