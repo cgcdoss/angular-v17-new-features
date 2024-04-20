@@ -37,3 +37,30 @@ body {
 input.mat-mdc-input-element {
     box-shadow: none;
 }
+
+/* Custom transition */
+@keyframes transition-out {
+    to {
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes transition-in {
+    from {
+        transform: translateY(50%);
+    }
+}
+
+app-root > main {
+    view-transition-name: principal;
+}
+
+::view-transition-old(principal),
+::view-transition-new(principal) {
+    animation-duration: 200ms;
+    animation-name: -ua-view-transition-fade-in, transition-in;
+}
+
+::view-transition-old(principal) {
+    animation-name: -ua-view-transition-fade-out, transition-out;
+}
