@@ -1,0 +1,11 @@
+<h1 class="text-2xl mb-2">
+    Features utilizadas:
+</h1>
+
+<mat-list role="list">
+    @for (feat of usedFeatures; track $index) {
+    <mat-list-item role="listitem">
+        <a [href]="feat.link" target="_blank" class="text-blue-500 underline">{{ feat.name }}</a>
+    </mat-list-item>
+    }
+</mat-list>

@@ -2,6 +2,10 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
+    path: 'home',
+    loadComponent: () => import('./pages/home/container/home.component').then(c => c.HomeComponent),
+  },
+  {
     path: 'cart',
     loadComponent: () => import('./pages/cart/container/cart.component').then(c => c.CartComponent),
   },
@@ -13,5 +17,5 @@ export const routes: Routes = [
     path: 'defer',
     loadComponent: () => import('./pages/defer/container/defer.component').then(c => c.DeferComponent),
   },
-  { path: '', redirectTo: 'cart', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];

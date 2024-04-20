@@ -1,7 +1,7 @@
 <header class="fixed top-0 left-0 w-full z-20 p-4 bg-gray-700">
     <button class="md:hidden text-white hover:bg-gray-900 px-4 py-2 transition-all"
         (click)="expanded.set(!expanded())">Expandir</button>
-    <div class="hidden md:flex gap-2" [class.expanded]="expanded()">
+    <div class="container mx-auto hidden md:flex gap-2" [class.expanded]="expanded()">
         @for (route of routes; track $index) {
         <a [routerLink]="route.path" class="text-white hover:bg-gray-900 px-4 py-2 transition-all"
             (click)="expanded.set(false)">
@@ -10,7 +10,7 @@
         }
     </div>
 </header>
-<div class="mt-20"></div>
+<div class="mt-24"></div>
 
 <main class="px-4 container mx-auto">
     <router-outlet />

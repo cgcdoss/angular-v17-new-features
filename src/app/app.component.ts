@@ -14,6 +14,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 export class AppComponent {
 
   routes = [
+    { path: 'home', name: 'Home' },
     { path: 'cart', name: 'Carrinho de compras' },
     { path: 'todo', name: 'Todo list' },
     { path: 'defer', name: 'Defer' },
