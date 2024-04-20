@@ -59,74 +59,66 @@
     Libero animi voluptas, harum asperiores adipisci pariatur recusandae esse minus expedita, explicabo voluptates,
     ducimus facere? Quas eveniet exercitationem magnam ex eius enim perferendis, totam, eos voluptates eaque nesciunt,
     veritatis accusantium?
-    Voluptas vitae animi illo amet consectetur modi, dolore distinctio in quia quae aliquid, natus dolorem consequuntur
-    aperiam labore, dicta eveniet quaerat veritatis quisquam dignissimos ex soluta quis ipsa autem! Omnis.
-    Reprehenderit maiores cupiditate quidem inventore, repudiandae ipsam quo maxime magnam praesentium deserunt dolore
-    itaque, autem minima cumque incidunt id mollitia? Enim similique eos quae, sapiente dolore soluta consequuntur.
-    Nostrum, optio.
-    Sed officia impedit voluptatem amet consequatur veniam provident quaerat necessitatibus dolorem hic eum facilis
-    officiis modi sit assumenda quia libero quidem dolor nihil, debitis minima aliquid quisquam! Quisquam, consequatur
-    eaque!
-    Cupiditate harum veniam dolores iure iste consequatur assumenda unde iusto eos dolor aut veritatis ad exercitationem
-    aspernatur mollitia, eum eius quo, quidem deserunt! Placeat cum debitis eum dolor, nobis inventore.
-    Temporibus officia sunt ipsa, odit nostrum assumenda facilis, velit quod distinctio unde culpa, dolore illum enim
-    perspiciatis tempora et? Nesciunt, atque blanditiis. Tempora nesciunt totam corrupti, repellat non perspiciatis
-    possimus?
 </h1>
 
-<h1 class="text-2xl my-4">Com on interaction (basta clicar)</h1>
 
-@defer (on interaction) {
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc10uXFleZuTdeL4R0JYdMlHPpR0EiE1f6etcMoUr7tA&s"
-    alt="Logo do Angular" width="100px" height="100px"><br>
-} @placeholder {
-<h2 class="text-xl">Futura imagem</h2>
-} @loading (minimum 2s) {
-<h2 class="text-xl">Carregando imagem...</h2>
-} @error {
-<h2 class="text-xl">Erro ao obter imagem</h2>
-}
+<div class="flex flex-col gap-8 mb-4 divide-y">
+    <div>
+        <h1 class="text-2xl my-4">Com on interaction (basta clicar)</h1>
+        @defer (on interaction) {
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc10uXFleZuTdeL4R0JYdMlHPpR0EiE1f6etcMoUr7tA&s"
+            alt="Logo do Angular" width="100px" height="100px"><br>
+        } @placeholder {
+        <h2 class="text-xl">Futura imagem (clique-me)</h2>
+        } @loading (minimum 2s) {
+        <h2 class="text-xl">Carregando imagem...</h2>
+        } @error {
+        <h2 class="text-xl">Erro ao obter imagem</h2>
+        }
+    </div>
 
-<hr>
+    <div>
 
-<h1 class="text-2xl my-4">Com on hover</h1>
+        <h1 class="text-2xl my-4">Com on hover</h1>
 
-@defer (on hover) {
-<img src="https://seeklogo.com/images/A/angular-icon-logo-5FC0C40EAC-seeklogo.com.png" alt="Logo do Angular"
-    width="100px" height="100px"><br>
-} @placeholder {
-<h2 class="text-xl">Futura imagem</h2>
-} @loading (minimum 2s) {
-<h2 class="text-xl">Carregando imagem...</h2>
-} @error {
-<h2 class="text-xl">Erro ao obter imagem</h2>
-}
+        @defer (on hover) {
+        <img src="https://seeklogo.com/images/A/angular-icon-logo-5FC0C40EAC-seeklogo.com.png" alt="Logo do Angular"
+            width="100px" height="100px"><br>
+        } @placeholder {
+        <h2 class="text-xl">Futura imagem (hover-me)</h2>
+        } @loading (minimum 2s) {
+        <h2 class="text-xl">Carregando imagem...</h2>
+        } @error {
+        <h2 class="text-xl">Erro ao obter imagem</h2>
+        }
+    </div>
 
-<hr>
+    <div>
+        <h1 class="text-2xl my-4">Com on viewport</h1>
 
-<h1 class="text-2xl my-4">Com on viewport</h1>
+        @defer (on viewport) {
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"
+            alt="Logo do Angular" width="100px" height="100px"><br>
+        } @placeholder {
+        <h2 class="text-xl">Futura imagem</h2>
+        } @loading (minimum 2s) {
+        <h2 class="text-xl">Carregando imagem...</h2>
+        } @error {
+        <h2 class="text-xl">Erro ao obter imagem</h2>
+        }
+    </div>
 
-@defer (on viewport) {
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"
-    alt="Logo do Angular" width="100px" height="100px"><br>
-} @placeholder {
-<h2 class="text-xl">Futura imagem</h2>
-} @loading (minimum 2s) {
-<h2 class="text-xl">Carregando imagem...</h2>
-} @error {
-<h2 class="text-xl">Erro ao obter imagem</h2>
-}
+    <div>
+        <h1 class="text-2xl my-4">Com componente (on viewport)</h1>
 
-<hr>
-
-<h1 class="text-2xl my-4">Com componente (on viewport)</h1>
-
-@defer (on viewport) {
-<app-defered />
-} @placeholder {
-<h2 class="text-xl">Futuro componente</h2>
-} @loading (minimum 2s) {
-<h2 class="text-xl">Carregando componente...</h2>
-} @error {
-<h2 class="text-xl">Erro ao obter componente</h2>
-}
+        @defer (on viewport) {
+        <app-defered />
+        } @placeholder {
+        <h2 class="text-xl">Futuro componente</h2>
+        } @loading (minimum 2s) {
+        <h2 class="text-xl">Carregando componente...</h2>
+        } @error {
+        <h2 class="text-xl">Erro ao obter componente</h2>
+        }
+    </div>
+</div>
