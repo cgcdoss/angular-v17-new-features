@@ -1,1 +1,17 @@
-<p>todo works!</p>
+<div class="flex flex-col gap-3">
+    <mat-form-field class="example-full-width">
+        <mat-label>Pesquisar</mat-label>
+        <input matInput placeholder="Qualquer coisa..." [formControl]="searchTerm">
+    </mat-form-field>
+
+    <!-- Poderia ser utilizado também como [(search)] -->
+    <app-todo-list [search]="searchTerm.value" (searchChange)="onSearchChange($event)" />
+</div>
+
+<hr class="my-6">
+
+<div class="flex flex-col gap-3">
+    <app-custom-checkbox [(checked)]="isChecked" />
+    <p>isChecked: {{ isChecked() }}</p>
+    <sup>(Funciona tanto com Signals quanto com valores primitivos, como boolean)</sup>
+</div>

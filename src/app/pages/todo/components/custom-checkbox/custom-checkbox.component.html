@@ -1,0 +1,7 @@
+<mat-checkbox class="example-margin" [checked]="checked()" (change)="checked.set($event.checked)">
+    Check me!
+</mat-checkbox>
+
+<br>
+
+<button mat-flat-button color="primary" (click)="checked.set(!checked())">Alternar checkbox</button>

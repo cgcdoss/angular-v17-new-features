@@ -34,6 +34,10 @@ export class HomeComponent {
       link: 'https://angular.io/guide/signal-queries',
     },
     {
+      name: 'Model inputs',
+      link: 'https://angular.io/guide/model-inputs',
+    },
+    {
       name: 'Built-in control flow',
       link: 'https://angular.io/guide/control_flow',
     },
