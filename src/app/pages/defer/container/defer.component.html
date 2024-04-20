@@ -116,3 +116,17 @@
 } @error {
 <h2 class="text-xl">Erro ao obter imagem</h2>
 }
+
+<hr>
+
+<h1 class="text-2xl my-4">Com componente (on viewport)</h1>
+
+@defer (on viewport) {
+<app-defered />
+} @placeholder {
+<h2 class="text-xl">Futuro componente</h2>
+} @loading (minimum 2s) {
+<h2 class="text-xl">Carregando componente...</h2>
+} @error {
+<h2 class="text-xl">Erro ao obter componente</h2>
+}
