@@ -1,0 +1,1 @@
+import{Hb as a,Ob as d,ba as o,pb as r,qb as i}from"./chunk-LNXIQD7Q.js";var c=(()=>{let e=class e{};e.\u0275fac=function(n){return new(n||e)},e.\u0275cmp=o({type:e,selectors:[["app-defered"]],standalone:!0,features:[d],decls:2,vars:0,template:function(n,p){n&1&&(r(0,"p"),a(1,"defered works!"),i())}});let t=e;return t})();export{c as DeferedComponent};
