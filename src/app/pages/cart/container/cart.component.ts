@@ -1,18 +1,21 @@
 import { Component, inject } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ListComponent } from '../components/list/list.component';
 
+
 @Component({
   selector: 'app-cart',
   standalone: true,
   imports: [
-    ListComponent,
+    ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
-    ReactiveFormsModule,
+    MatCardModule,
+    ListComponent,
   ],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.scss'
